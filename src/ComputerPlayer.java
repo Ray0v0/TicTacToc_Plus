@@ -2,7 +2,7 @@ import java.util.Random;
 
 public class ComputerPlayer extends Player{
     public ComputerPlayer(int identity) {
-        super(identity);
+        super(identity, "Computer");
     }
     private int countBlank(Board chessBoard) {
         int count = 0;
@@ -11,6 +11,7 @@ public class ComputerPlayer extends Player{
         }
         return count;
     }
+
     @Override
     public int input(Board chessBoard) {
         int condition = countBlank(chessBoard);
@@ -109,7 +110,7 @@ public class ComputerPlayer extends Player{
 
     private int alpha_beta(Board chessBoard, int nowPlayer, int alpha, int beta) {
         int ret;
-        OUT:
+//        OUT:
         if (chessBoard.isEnd() != 0) {
             ret = chessBoard.isEnd();
         } else if (chessBoard.isFull()) {
@@ -127,7 +128,7 @@ public class ComputerPlayer extends Player{
                         }
                         if (alpha >= beta) {
                             ret = alpha;
-                            break OUT;
+//                            break OUT;
                         }
                     } else {
                         if (value < beta) {
@@ -135,7 +136,7 @@ public class ComputerPlayer extends Player{
                         }
                         if (beta <= alpha) {
                             ret = beta;
-                            break OUT;
+//                            break OUT;
                         }
                     }
                 }

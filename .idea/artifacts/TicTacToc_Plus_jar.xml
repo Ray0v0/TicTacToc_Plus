@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="TicTacToc_Plus:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/TicTacToc_Plus_jar</output-path>
+    <root id="root">
+      <element id="archive" name="TicTacToc_Plus.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/jar/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="TicTacToc_Plus" />
+      </element>
+    </root>
+  </artifact>
+</component>
