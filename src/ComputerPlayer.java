@@ -127,7 +127,8 @@ public class ComputerPlayer extends Player{
                             alpha = value;
                         }
                         if (alpha >= beta) {
-                            ret = alpha;
+                            break;
+//                            ret = alpha;
 //                            break OUT;
                         }
                     } else {
@@ -135,7 +136,8 @@ public class ComputerPlayer extends Player{
                             beta = value;
                         }
                         if (beta <= alpha) {
-                            ret = beta;
+                            break;
+//                            ret = beta;
 //                            break OUT;
                         }
                     }
